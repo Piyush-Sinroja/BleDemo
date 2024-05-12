@@ -7,6 +7,7 @@
 
 import CoreBluetooth
 
+// MARK: - CBPeripheralManagerDelegate
 extension BLEManager: CBPeripheralManagerDelegate {
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         switch peripheral.state {

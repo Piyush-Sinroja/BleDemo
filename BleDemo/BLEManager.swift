@@ -16,6 +16,7 @@ enum Constants: String {
 let charUUID = CBUUID(string: Constants.CHARACTERISTIC_UUID.rawValue)
 let serviceUUID = CBUUID(string: Constants.SERVICE_UUID.rawValue)
 
+// MARK: - This class is used to handle ble related functionality
 class BLEManager: NSObject, ObservableObject {
 
     enum DeviceType {
@@ -24,6 +25,8 @@ class BLEManager: NSObject, ObservableObject {
         case none
     }
 
+    // MARK: - Variables
+    
     @Published var cbCentralManager : CBCentralManager!
     @Published var cbData: Data?
     @Published var discoveredPeripheral : CBPeripheral?
@@ -42,10 +45,16 @@ class BLEManager: NSObject, ObservableObject {
 
     @Published var deviceType = DeviceType.none
 
+    // MARK: - init
+
     private override init() {
         super.init()
     }
 
+    // MARK: - Helper Methods
+    
+    /// select Device Type
+    /// - Parameter deviceType: device type
     func selectDeviceType(deviceType: DeviceType) {
         if deviceType == .central {
             cbCentralManager = CBCentralManager(delegate: self, queue: nil)
@@ -55,6 +64,7 @@ class BLEManager: NSObject, ObservableObject {
         self.deviceType = deviceType
     }
 
+    /// scan peripherals
     func scan() {
         if cbCentralManager.isScanning {
             cbCentralManager.stopScan()
@@ -63,6 +73,7 @@ class BLEManager: NSObject, ObservableObject {
         print("Scanning...")
     }
 
+    /// advertise peripherals
     func advertisePheripheral(isOn: Bool) {
         if isOn {
             var advertisingData: [String : Any] = [CBAdvertisementDataLocalNameKey: name, CBAdvertisementDataServiceUUIDsKey: [serviceUUID]]
@@ -72,10 +83,17 @@ class BLEManager: NSObject, ObservableObject {
         }
     }
 
+    /// connect with peripheral
+    /// - Parameter peripheral: A remote peripheral device.
     func connectWithPeripheral(peripheral: CBPeripheral) {
         cbCentralManager.connect(peripheral, options: nil)
     }
 
+    /// send from central
+    /// - Parameters:
+    ///   - charValue: str value
+    ///   - count: char count value
+    ///   - isRandom: true if sending random string
     func sendFromCentralName(charValue: String, count: Int, isRandom: Bool) {
         guard let characteristic = cbSideCharacteristic else {
             return
@@ -96,6 +114,11 @@ class BLEManager: NSObject, ObservableObject {
         }
     }
 
+    /// send from peripheral
+    /// - Parameters:
+    ///   - charValue: char value
+    ///   - count: char count
+    ///   - isRandom: true if sending random string
     func sendFromPeripheral(charValue: String, count: Int, isRandom: Bool) {
 
         var sendChar = charValue
@@ -110,11 +133,16 @@ class BLEManager: NSObject, ObservableObject {
         self.peripheralManager?.updateValue(data, for: transferCharacteristic, onSubscribedCentrals: discoveredCentral == nil ? nil : [discoveredCentral!])
     }
     
+    /// generate randome string
+    /// - Parameter length: str length
+    /// - Returns: get randome string
     func randomString(length: Int) -> String {
         let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         return String((0..<length).map{ _ in letters.randomElement()! })
     }
 
+    /// automatice connect with ble
+    /// - Parameter peripheral: A remote peripheral device.
     func automaticConnectWithBle(peripheral: CBPeripheral) {
         cbCentralManager.connect(peripheral)
     }

@@ -7,6 +7,7 @@
 import Foundation
 import CoreBluetooth
 
+// MARK: - CBCentralManagerDelegate
 extension BLEManager: CBCentralManagerDelegate {
 
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
