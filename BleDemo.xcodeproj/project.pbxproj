@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C1022372B99976900393BBA /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1022362B99976900393BBA /* Utility.swift */; };
+		1C7E75292B98408B00095CD5 /* BleDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E75282B98408B00095CD5 /* BleDemoApp.swift */; };
+		1C7E752B2B98408B00095CD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E752A2B98408B00095CD5 /* ContentView.swift */; };
+		1C7E752D2B98408D00095CD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C7E752C2B98408D00095CD5 /* Assets.xcassets */; };
+		1C7E75302B98408D00095CD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C7E752F2B98408D00095CD5 /* Preview Assets.xcassets */; };
+		1C7E75372B9840BF00095CD5 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E75362B9840BF00095CD5 /* BLEManager.swift */; };
+		1C7E75392B98456300095CD5 /* BLEManager+CBCMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E75382B98456300095CD5 /* BLEManager+CBCMDelegate.swift */; };
+		1C7E753B2B9845E500095CD5 /* BLEManager+CBPDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E753A2B9845E500095CD5 /* BLEManager+CBPDelegate.swift */; };
+		1C7E753D2B9846BE00095CD5 /* BLEManager+CBPMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E753C2B9846BE00095CD5 /* BLEManager+CBPMDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C1022362B99976900393BBA /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		1C1022382B99C57500393BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1C7E75252B98408B00095CD5 /* BleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7E75282B98408B00095CD5 /* BleDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleDemoApp.swift; sourceTree = "<group>"; };
+		1C7E752A2B98408B00095CD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1C7E752C2B98408D00095CD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C7E752F2B98408D00095CD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C7E75362B9840BF00095CD5 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		1C7E75382B98456300095CD5 /* BLEManager+CBCMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BLEManager+CBCMDelegate.swift"; sourceTree = "<group>"; };
+		1C7E753A2B9845E500095CD5 /* BLEManager+CBPDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BLEManager+CBPDelegate.swift"; sourceTree = "<group>"; };
+		1C7E753C2B9846BE00095CD5 /* BLEManager+CBPMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BLEManager+CBPMDelegate.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C7E75222B98408B00095CD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C7E751C2B98408B00095CD5 = {
+			isa = PBXGroup;
+			children = (
+				1C7E75272B98408B00095CD5 /* BleDemo */,
+				1C7E75262B98408B00095CD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C7E75262B98408B00095CD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C7E75252B98408B00095CD5 /* BleDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C7E75272B98408B00095CD5 /* BleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1C1022382B99C57500393BBA /* Info.plist */,
+				1C7E75282B98408B00095CD5 /* BleDemoApp.swift */,
+				1C7E752A2B98408B00095CD5 /* ContentView.swift */,
+				1C7E75362B9840BF00095CD5 /* BLEManager.swift */,
+				1C7E75382B98456300095CD5 /* BLEManager+CBCMDelegate.swift */,
+				1C7E753A2B9845E500095CD5 /* BLEManager+CBPDelegate.swift */,
+				1C7E753C2B9846BE00095CD5 /* BLEManager+CBPMDelegate.swift */,
+				1C1022362B99976900393BBA /* Utility.swift */,
+				1C7E752C2B98408D00095CD5 /* Assets.xcassets */,
+				1C7E752E2B98408D00095CD5 /* Preview Content */,
+			);
+			path = BleDemo;
+			sourceTree = "<group>";
+		};
+		1C7E752E2B98408D00095CD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1C7E752F2B98408D00095CD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C7E75242B98408B00095CD5 /* BleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C7E75332B98408D00095CD5 /* Build configuration list for PBXNativeTarget "BleDemo" */;
+			buildPhases = (
+				1C7E75212B98408B00095CD5 /* Sources */,
+				1C7E75222B98408B00095CD5 /* Frameworks */,
+				1C7E75232B98408B00095CD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BleDemo;
+			productName = BleDemo;
+			productReference = 1C7E75252B98408B00095CD5 /* BleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C7E751D2B98408B00095CD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					1C7E75242B98408B00095CD5 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 1C7E75202B98408B00095CD5 /* Build configuration list for PBXProject "BleDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C7E751C2B98408B00095CD5;
+			productRefGroup = 1C7E75262B98408B00095CD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C7E75242B98408B00095CD5 /* BleDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C7E75232B98408B00095CD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7E75302B98408D00095CD5 /* Preview Assets.xcassets in Resources */,
+				1C7E752D2B98408D00095CD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C7E75212B98408B00095CD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C1022372B99976900393BBA /* Utility.swift in Sources */,
+				1C7E752B2B98408B00095CD5 /* ContentView.swift in Sources */,
+				1C7E75392B98456300095CD5 /* BLEManager+CBCMDelegate.swift in Sources */,
+				1C7E753D2B9846BE00095CD5 /* BLEManager+CBPMDelegate.swift in Sources */,
+				1C7E753B2B9845E500095CD5 /* BLEManager+CBPDelegate.swift in Sources */,
+				1C7E75372B9840BF00095CD5 /* BLEManager.swift in Sources */,
+				1C7E75292B98408B00095CD5 /* BleDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1C7E75312B98408D00095CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: Piyush Sinroja (7D3KUNXBJ7)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C7E75322B98408D00095CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C7E75342B98408D00095CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development: Piyush Sinroja (V533T8ZR4N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Piyush Sinroja (V533T8ZR4N)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BleDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Y849CPAR9;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = F56FC8LMJX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BleDemo/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Our app uses bluetooth to find, connect and transfer data between different devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Our app uses bluetooth to find, connect and transfer data between different devices.";
+				INFOPLIST_KEY_NSBluetoothWhileInUseUsageDescription = "Our app uses bluetooth to find, connect and transfer data between different devices.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.piyushsinroja.BleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_Profile_WildCard;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Dev_Profile_WildCard;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C7E75352B98408D00095CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development: Piyush Sinroja (V533T8ZR4N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Piyush Sinroja (V533T8ZR4N)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BleDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Y849CPAR9;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = F56FC8LMJX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BleDemo/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Our app uses bluetooth to find, connect and transfer data between different devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Our app uses bluetooth to find, connect and transfer data between different devices.";
+				INFOPLIST_KEY_NSBluetoothWhileInUseUsageDescription = "Our app uses bluetooth to find, connect and transfer data between different devices.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.piyushsinroja.BleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_Profile_WildCard;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Dev_Profile_WildCard;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C7E75202B98408B00095CD5 /* Build configuration list for PBXProject "BleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7E75312B98408D00095CD5 /* Debug */,
+				1C7E75322B98408D00095CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C7E75332B98408D00095CD5 /* Build configuration list for PBXNativeTarget "BleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7E75342B98408D00095CD5 /* Debug */,
+				1C7E75352B98408D00095CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C7E751D2B98408B00095CD5 /* Project object */;
+}
